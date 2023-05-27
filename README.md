@@ -12,5 +12,11 @@ To use this project, follow these steps:
 ## Limitations
 As of now, this project only supports generating simple prompts.
 
+## Future Developments
+- Use of a specific language for the output
+- Use of a specific keywords in the output
+- Use of example to explain each notion
+- Confidence score at the end of the output
+
 ## Author
 This project was created by Yann Rimbaud ([@yrimbaud](https://github.com/yrimbaud)).
