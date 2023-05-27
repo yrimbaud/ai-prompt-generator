@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Prompt Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Simple Prompt Generator</h1>
+
+	<textarea id="generatedPrompt" rows="4"></textarea><br>
+	<button onclick="copyToClipboard()">Copier</button>
+	  
+	<h2>Options</h2>
+
+	<div class="item">	
+		<p class="select_title">Action:</p>
+		<select id="action" onchange="generateText()">
+			<option></option>
+			<option value="I want you to make a list of ideas.">List of ideas</option>
+			<option value="I want you to make a clear explanation.">Explanation</option>
+			<option value="Elaborate a current text. ">Elaborate a current text</option>
+			<option value="Summarize a text.">Summarize a text</option>
+			<option value="Translate a text.">Translate a text</option>
+		</select>
+	</div>
+
+	<div class="item">	
+		<p class="select_title">Status:</p>
+		<select id="acting" onchange="generateText()">
+			<option></option>
+			<option value="You are an expert the field and use the appropriate vocabulary.">Expert</option>
+			<option value="You are a average person the field and use the appropriate vocabulary.">Average</option>
+		</select>
+	</div>
+
+	<div class="item">	
+		<p class="select_title">Public:</p>
+		<select id="public" onchange="generateText()">
+			<option></option>
+			<option value="You are talking to an expert.">Expert</option>
+			<option value="You are talking to a young adult.">Young adult</option>
+			<option value="You are talking to a child.">Child</option>
+		</select>
+	</div>
+
+	<div class="item">	
+		<p class="select_title">Field:</p>
+		<select id="fields" onchange="generateText()">
+			<option></option>
+			<option value="The prompt is about Business.">Business</option>
+			<option value="The prompt is about Privacy.">Privacy</option>
+			<option value="The prompt is about Security.">Security</option>
+			<option value="The prompt is about Web development.">Web development</option>
+		</select>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
